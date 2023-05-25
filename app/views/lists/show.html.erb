@@ -1,0 +1,11 @@
+<div class="container">
+  <h1><%= @list.name %></h1>
+  <%= link_to "Add movie", new_list_bookmark_path(@list), class: 'btn btn-primary'%>
+  <div>
+    <% @movies.each do |movie| %>
+      <div class="card">
+      <%= movie.title %>
+      </div>
+    <% end %>
+  </div>
+</div>

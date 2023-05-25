@@ -1,0 +1,9 @@
+<div id="lists" class="container">
+  <% @lists.each do |list| %>
+  <%= link_to list do %>
+  <div class="card">
+    <%= list.name %>
+  </div>
+  <% end %>
+  <% end %>
+</div>
